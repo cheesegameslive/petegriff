@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-client.on('ready', () => {//playing status
+client.on('ready', () => {
     client.user.setStatus('available')
     client.user.setPresence({
         game: {
