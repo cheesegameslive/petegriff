@@ -30,6 +30,12 @@ function RandomString(length) {
 }
 
 
+client.on('message', message => {
+  if(message.content === '.imgur')
+  (message.channel.send("https://imgur.com/gallery/" + RandomString(7)))  
+.catch(console.error);
+  }
+);
 
 client.on('message', message => {
   if(message.content === '.lightshot')
