@@ -48,10 +48,10 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-  if (message.content === 'restartthebot') {
-    if (message.author.id !== '145220382012604416') return;
- message.channel.send('brb')
- .then(message => client.destroy())
-.then(() => client.login(process.env.client_TOKEN))
-.then(message.channel.send('back'))}})
+  if(message.content === '.restart')
+   message.channel.send('brb')
+   .then(message => client.destroy())
+  .then(() => client.login(process.env.client_TOKEN))
+  .then(message.channel.send('back')
+
 )});
