@@ -1,16 +1,16 @@
 {
 
-  "name": "Peter",
+  "name": "Example",
 
   "description": "Example",
 
-  "version": "1",
+  "version": "0.0.0",
 
-  "main": "index.js",
+  "main": "bot.js",
 
   "scripts": {
 
-    "start": "node index.js"
+    "start": "node bot.js"
 
   },
 
