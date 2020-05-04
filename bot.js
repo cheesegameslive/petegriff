@@ -17,9 +17,7 @@ client.login(process.env.client_TOKEN).catch(console.error);
 client.on('ready', () => {
   console.log('im on nigga')
 });
-client.on('message', message  => {
-if(if(message.author.id === '145220382012604416') {message.react(stoic)}
-}
+
 function RandomString(length) {
   var result           = '';
   var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
