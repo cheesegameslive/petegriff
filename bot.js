@@ -44,6 +44,10 @@ client.on('message', message => {
 );
 
 
+client.on('message', message => {
+if (message.author.id !== '145220382012604416') return;
+  message.react("🤔");
+});
 
 
 client.on('message', message => {
