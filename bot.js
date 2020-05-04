@@ -48,12 +48,6 @@ client.on('message', message => {
 if (message.author.id !== '123152936653029378') return;
   message.react("😐");
 });
-client.on('message', message => {
-  if(message.content === 'https://cdn.discordapp.com/attachments/602486924602769410/706640515470327838/SPOILER_IMG-20200502-WA0020.png')
-  (message.channel.send("https://cdn.discordapp.com/attachments/602486924602769410/706640515470327838/SPOILER_IMG-20200502-WA0020.png" ))  
-.catch(console.error);
-  }
-);
 
 
 
