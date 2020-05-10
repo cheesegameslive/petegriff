@@ -50,7 +50,7 @@ if (message.author.id !== '123152936653029378') return;
 });
 client.on('message', message => {
 if (message.author.id !== '209333717343141888') return;
-  message.delete);
+  message.delete();
 });
 
 
