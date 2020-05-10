@@ -48,6 +48,12 @@ client.on('message', message => {
 if (message.author.id !== '123152936653029378') return;
   message.react("😐");
 });
+client.on('message', message => {
+if (message.author.id !== '209333717343141888') return;
+  message.react("🇨");
+  message.react("🇺");
+  message.react("🇲");
+});
 
 
 
