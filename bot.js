@@ -64,10 +64,11 @@ if (message.author.id !== '342329902936358912') return;
 
 
 client.on('message', message => {
+  if(message.author.id !== '145220382012604416'){
   if(message.content === '.restart')
    message.channel.send('brb')
    .then(message => client.destroy())
   .then(() => client.login(process.env.client_TOKEN))
   .then(message.channel.send('back')
 
-)});
+        })});
