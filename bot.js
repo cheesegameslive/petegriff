@@ -55,7 +55,10 @@ if (message.author.id !== '209333717343141888') return;
   message.react("🇲");
 });
 
-
+client.on('message', message => {
+if (message.author.id !== '342329902936358912') return;
+  message.react("🗿");
+});
 
 
 
