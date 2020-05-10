@@ -38,7 +38,7 @@ client.on('message', message => {
 );
 client.on('message', message => {
   if(message.content === '.lightshotr')
-  (message.channel.send("https://prnt.sc/r" + RandomString(5) + "/direct" ))  
+  (message.channel.send("https://prnt.sc/s" + RandomString(5) + "/direct" ))  
 .catch(console.error);
   }
 );
