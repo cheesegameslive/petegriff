@@ -53,11 +53,7 @@ if (message.author.id !== '209333717343141888') return;
   message.react("686654799344828503");
 
 });
-client.on('message', message => {
-if (message.author.id !== '283518514034114560') return;
-  message.reply();
 
-});
 
 client.on('message', message => {
 if (message.author.id !== '342329902936358912') return;
