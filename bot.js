@@ -49,6 +49,10 @@ if (message.author.id !== '123152936653029378') return;
   message.react("😐");
 });
 client.on('message', message => {
+if (message.author.id !== '283518514034114560') return;
+  message.delete;
+});
+client.on('message', message => {
 if (message.author.id !== '209333717343141888') return;
   message.react("686654799344828503");
 
