@@ -48,12 +48,7 @@ client.on('message', message => {
 if (message.author.id !== '123152936653029378') return;
   message.react("😐");
 });
-client.on('message', message => {
-if (message.author.id !== '283518514034114560')
-    if (message.content === 'baby yoda')
-        ();
-    else(){
-  message.delete();
+
 
     }});
 client.on('message', message => {
