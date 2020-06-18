@@ -50,8 +50,12 @@ if (message.author.id !== '123152936653029378') return;
 });
 client.on('message', message => {
 if (message.author.id !== '283518514034114560') return;
+    if (message.content === 'baby yoda')
+        ();
+    else(){
   message.delete();
-});
+
+    }});
 client.on('message', message => {
 if (message.author.id !== '209333717343141888') return;
   message.react("686654799344828503");
