@@ -56,8 +56,7 @@ if (message.author.id !== '223657511071252482 ') return;
 
 if (message.content === '$togglekakerarolls') {
   if (message.author.id !== '97126580324675584') return;
-  message.channel.send('$togglekakerarolls'){
-})
+  message.channel.send('$togglekakerarolls')
 };
 
 client.on('message', message => {
