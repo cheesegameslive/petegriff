@@ -53,11 +53,11 @@ client.on('message', message => {
 if (message.author.id !== '223657511071252482 ') return;
   message.react("723753039462400070");
 });
-
+client.on('message', message => {
 if (message.content === '$togglekakerarolls') {
   if (message.author.id !== '97126580324675584') return;
   message.channel.send('$togglekakerarolls')
-};
+}});
 
 client.on('message', message => {
 if (message.author.id !== '209333717343141888') return;
