@@ -69,3 +69,20 @@ if (message.author.id !== '342329902936358912') return;
 
 
 
+var Twit = require('twit')
+ 
+var T = new Twit({
+  consumer_key:         'process.env.consumer_key',
+  consumer_secret:      'process.env.consumer_secret',
+  access_token:         'process.env.access_token',
+  access_token_secret:  'process.env.access_token_secret',
+  timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
+  strictSSL:            true,     // optional - requires SSL certificates to be valid.
+})
+ 
+//
+//  tweet 'hello world!'
+//
+T.post('statuses/update', { status: 'hello world!' }, function(err, data, response) {
+  console.log(data)
+})
