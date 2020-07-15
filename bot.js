@@ -67,12 +67,12 @@ if (message.author.id !== '342329902936358912') return;
   message.react("🗿");
 });
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
   console.log(member.user.tag)
   member.ban(); 
   });
 
-  bot.on('message', message => {
+  client.on('message', message => {
     if (message.content === '!bancheck') {
       message.guild.fetchBans()
       .then(bans => message.channel.send(`This guild has ${bans.size} bans`))
