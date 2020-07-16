@@ -43,7 +43,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-if (message.channel.id === '529773855812616207') return;
+if (message.channel.id !=== '529773855812616207') return;
   message.react("⛓");
 });
 
