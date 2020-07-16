@@ -33,13 +33,11 @@ function RandomString(length) {
 client.on('message', message => {
   if(message.content === '.lightshot')
   (message.channel.send("https://prnt.sc/" + RandomString(6) + "/direct" ))  
-.catch(console.error);
   }
 );
 client.on('message', message => {
   if(message.content === '.lightshotr')
   (message.channel.send("https://prnt.sc/s" + RandomString(5) + "/direct" ))  
-.catch(console.error);
   }
 );
 
