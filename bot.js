@@ -53,6 +53,7 @@ if (message.author.id !== '223657511071252482 ') return;
 });
 
 
+
 client.on('message', message => {
 if (message.author.id !== '209333717343141888') return;
   message.react("686654799344828503");
@@ -63,6 +64,11 @@ if (message.author.id !== '209333717343141888') return;
 client.on('message', message => {
 if (message.author.id !== '342329902936358912') return;
   message.react("🗿");
+});
+
+client.on('message', message => {
+if (message.author.id !== '417722024257912833') return;
+  message.react("🐸");
 });
 
 
