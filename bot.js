@@ -107,7 +107,7 @@ function TweetVideo()
 var statusToSend;
 
 client.on('message', message => {
-    if ( /*message.channel.id === '625003486521720842' || */ message.channel.id === '529773855812616207') 
+    if ( /*message.channel.id === '625003486521720842' || */ message.channel.id === '715493853733322783') 
     {
         if(message.content.startsWith("999.)"))
         {
