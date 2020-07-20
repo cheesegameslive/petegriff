@@ -1,10 +1,10 @@
 var Twit = require('twit')
  
 var T = new Twit({
-  consumer_key:         toString(process.env.consumer_key),
-  consumer_secret:      toString(process.env.consumer_secret),
-  access_token:         toString(process.env.access_token),
-  access_token_secret:  toString(process.env.access_token_secret),
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token: process.env.ACCESS_TOKEN,
+    access_token_secret: process.env.ACCESS_TOKEN_SECRET,
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
