@@ -230,8 +230,8 @@ const download = (url, path, callback) => {
 }
 
 
-var path = './media/file.png'
-const pathMp4 = './media/file.mp4'
+var path = '/app/file.png'
+const pathMp4 = '/app/file.mp4'
 
 var DownloadImage = function Download(url)
 {
