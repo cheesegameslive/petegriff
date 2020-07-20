@@ -126,21 +126,21 @@ client.on('message', message => {
             console.log('Test2');
             if(message.attachments.first().url.includes(".png")){
                 console.log('Downloading Png');
-                path = './media/file.png'
+                path = '/app/file.png'
                 DownloadImage(message.attachments.first().url);
                 setTimeout(TweetMedia, 1000);
             }
             else if(message.attachments.first().url.includes(".jpg"))
             {
                 console.log('Downloading jpg');
-                path = './media/file.jpg'
+                path = '/app/file.jpg'
                 DownloadImage(message.attachments.first().url);
                 setTimeout(TweetMedia, 1000);
             }/*
             else if(message.attachments.first().url.includes(".mp4"))
             {
                 console.log('Downloading mp4');
-                path = './media/file.mp4'
+                path = '/app/file.mp4'
                 DownloadImage(message.attachments.first().url);
                 setTimeout(TweetVideo, 3000);
                 
@@ -148,14 +148,14 @@ client.on('message', message => {
             else if(message.attachments.first().url.includes(".gif"))
             {
                 console.log('Downloading gif');
-                path = './media/file.gif'
+                path = '/app/file.gif'
                 DownloadImage(message.attachments.first().url);
                 setTimeout(TweetMedia, 2000);
             }
             else if(message.attachments.first().url.includes(".mp3"))
             {
                 console.log('Downloading gif');
-                path = './media/file.mp3'
+                path = '/app/file.mp3'
                 DownloadImage(message.attachments.first().url);
                 setTimeout(TweetMedia, 2000);
             }
@@ -177,14 +177,14 @@ client.on('message', message => {
                 if(SplitMessage.length > 1){ parts = 1}
                 if(SplitMessage[parts].includes(".png")){
                     console.log('Downloading Png');
-                    path = './media/file.png'
+                    path = '/app/file.png'
                     DownloadImage(SplitMessage[parts]);
                     setTimeout(TweetMedia, 1000);
                 }
                 else if(SplitMessage[parts].includes(".jpg"))
                 {
                     console.log('Downloading jpg');
-                    path = './media/file.jpg'
+                    path = '/app/file.jpg'
                     DownloadImage(SplitMessage[parts]);
                     setTimeout(TweetMedia, 1000);
                 }
@@ -192,7 +192,7 @@ client.on('message', message => {
                 else if(SplitMessage[parts].includes(".mp4"))
                 {
                     console.log('Downloading mp4');
-                    path = './media/file.mp4'
+                    path = '/app/file.mp4'
                     DownloadImage(SplitMessage[parts]);
                     setTimeout(TweetMedia, 2000);
                 }
