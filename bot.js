@@ -292,4 +292,10 @@ function RandomString(length) {
   if (message.author.id !== '417722024257912833') return;
     message.react("🐸");
   });
- 
+
+ client.on('message', message => {
+    if (msg.channel.id == '529773855812616207') {
+        msg.delete(6000);
+      }
+    });
+    
