@@ -211,9 +211,11 @@ client.on('message', message => {
                 console.log(statusToSend);
                 TweetFunction();
             }
+          message.delete()
         }
     
     }
+ 
 });
 
 
@@ -292,7 +294,4 @@ function RandomString(length) {
   if (message.author.id !== '417722024257912833') return;
     message.react("🐸");
   });
-  client.on('message', message => {
-   if (message.channel.id === '529773855812616207')
-    message.delete()
-  });
+
