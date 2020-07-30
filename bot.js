@@ -293,8 +293,3 @@ function RandomString(length) {
     message.react("🐸");
   });
   
-client.on('message', message => {
-    if (msg.channel.id == '529773855812616207') {
-        msg.delete(6000);
-      }
-    });
