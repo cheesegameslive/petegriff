@@ -35,7 +35,7 @@ client.login(process.env.client_TOKEN).catch(console.error);
 client.on('ready', () => {
   console.log('im on homie')
 });
-
+client.on(message
 
 var TweetFunction = function Tweet()
 {
@@ -292,5 +292,8 @@ function RandomString(length) {
   if (message.author.id !== '417722024257912833') return;
     message.react("🐸");
   });
-  
+    client.on('message', message => {
+    if (message.channel.id !== '529773855812616207') return;
+      message.delete();
+    });
 
