@@ -28,7 +28,7 @@ client.on('ready', () => {
 });
 
 client.on("ready", () => {
-  const channel = client.channels.get("mychannelid");
+  const channel = client.channels.get("699018665231646742");
   if (!channel) return console.error("The channel does not exist!");
   channel.join().then(connection => {
    // connectsed
