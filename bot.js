@@ -28,6 +28,8 @@ client.on('ready', () => {
             type: "WATCHING",
             url: ""
         }
+       let channel = client.channels.get('432462518380789771');
+  channel.join(699018665231646742)
     });
 });
 
