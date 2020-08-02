@@ -220,6 +220,7 @@ client.on('message', message => {
 
 
 
+
 const fs = require('fs')
 const request = require('request')
 
@@ -265,10 +266,12 @@ function RandomString(length) {
     }
   );
   
+
   
   client.on('message', message => {
   if (message.channel.id !== '529773855812616207') return;
-    message.react("⛓");
+     console.log(`a message saying "${message.cleanContent}" was deleted from channel: ${message.channel.name} at ${new Date()}`);
+    client.channels.get("581795561854730252").send(`A message saying "${message.cleanContent}" has been deleted at ${new Date()}`)
   });
   
   client.on('message', message => {
