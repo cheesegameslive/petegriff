@@ -25,18 +25,16 @@ const client = new Discord.Client();
 client.login(process.env.client_TOKEN).catch(console.error);
 client.on('ready', () => {
   console.log('im on homie')
-});
-
-client.on('ready', () => {
-    client.user.setStatus('available')
+     client.user.setStatus('available')
     client.user.setPresence({
         game: {
             name: 'over u',
             type: "WATCHING",
             url: ""
         }
-    });
 });
+
+
 
 var TweetFunction = function Tweet()
 {
