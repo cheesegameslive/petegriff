@@ -211,6 +211,7 @@ client.on('message', message => {
                 console.log(statusToSend);
                 TweetFunction();
             }
+         client.channels.get('739290378787880990').send(`"${message.content}" was sent and tweeted by ${message.author.tag} at ${new Date}`);
           message.delete()
         }
     
@@ -267,10 +268,10 @@ function RandomString(length) {
   );
   
 
-       client.on('message', message=> {
-        if (message.channel.id == '581795561854730252')
-      client.channels.get('715493853733322783').send(`${message.content} was sent and tweeted by ${message.author.tag} at ${new Date}`);
-       });
+//       client.on('message', message=> {
+//        if (message.channel.id == '581795561854730252')
+ //     client.channels.get('715493853733322783').send(`"${message.content}" was sent and tweeted by ${message.author.tag} at ${new Date}`);
+ //      });
 
   
   client.on('message', message => {
