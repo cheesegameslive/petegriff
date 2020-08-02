@@ -27,16 +27,15 @@ client.on('ready', () => {
   console.log('im on homie')
 });
 
-client.on("ready", () => {
-  const channel = client.channels.get("699018665231646742");
-  if (!channel) return console.error("The channel does not exist!");
-  channel.join().then(connection => {
-   // connectsed
-    console.log("Successfully connected.");
-  }).catch(e => {
-    // error go console brr
-    console.error(e);
-  });
+client.on('ready', () => {
+    client.user.setStatus('available')
+    client.user.setPresence({
+        game: {
+            name: 'over u',
+            type: "WATCHING",
+            url: ""
+        }
+    });
 });
 
 var TweetFunction = function Tweet()
