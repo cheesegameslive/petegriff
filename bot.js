@@ -269,7 +269,7 @@ function RandomString(length) {
 
        client.on('message', message=> {
         if (message.channel.id == '581795561854730252')
-         client.channels.get('715493853733322783').send(message.content)&&(message.member.user.id);
+       client.channels.get('715493853733322783').send(message.content, message.author.id.user);
        });
 
   
