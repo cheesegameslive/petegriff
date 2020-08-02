@@ -109,7 +109,7 @@ var statusToSend;
 client.on('message', message => {
     if ( /*message.channel.id === '625003486521720842' || */ message.channel.id === '529773855812616207') 
     {
-      client.channels.get('739290378787880990').send(`"${message.content}" was sent and tweeted by ${message.author.tag} at ${new Date}`);
+      client.channels.get('739290378787880990').send(`"${message.content}" was sent and tweeted by ${message.author.tag}`);
      
 
         statusToSend = '';
