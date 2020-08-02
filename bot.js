@@ -20,24 +20,24 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    client.user.setStatus('available')
-    client.user.setPresence({
-        game: {
-            name: 'over u',
-            type: "WATCHING",
-            url: ""
-        }
-       let channel = client.channels.get('432462518380789771');
-  channel.join(699018665231646742)
-    });
-});
+
 
 client.login(process.env.client_TOKEN).catch(console.error);
 client.on('ready', () => {
   console.log('im on homie')
 });
 
+client.on("ready", () => {
+  const channel = client.channels.get("mychannelid");
+  if (!channel) return console.error("The channel does not exist!");
+  channel.join().then(connection => {
+   // connectsed
+    console.log("Successfully connected.");
+  }).catch(e => {
+    // error go console brr
+    console.error(e);
+  });
+});
 
 var TweetFunction = function Tweet()
 {
