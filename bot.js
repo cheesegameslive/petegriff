@@ -109,10 +109,8 @@ var statusToSend;
 client.on('message', message => {
     if ( /*message.channel.id === '625003486521720842' || */ message.channel.id === '529773855812616207') 
     {
-        if(message.content.startsWith("999.)"))
-        {
-            message.channel.send("1000.) https://twitter.com/HashtagRulez");
-        }
+      client.channels.get('739290378787880990').send(`"${message.content}" was sent and tweeted by ${message.author.tag} at ${new Date}`);
+     
 
         statusToSend = '';
         console.log('Test 1')
@@ -165,6 +163,7 @@ client.on('message', message => {
                 statusToSend = message.content + ' \n' + message.attachments.first().url;
                 TweetFunction();
             }
+         
         }
         else 
         {
@@ -211,8 +210,8 @@ client.on('message', message => {
                 console.log(statusToSend);
                 TweetFunction();
             }
-         client.channels.get('739290378787880990').send(`"${message.content}" was sent and tweeted by ${message.author.tag} at ${new Date}`);
           message.delete()
+
         }
     
     }
