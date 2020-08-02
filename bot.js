@@ -267,10 +267,10 @@ function RandomString(length) {
   );
   
 
-  client.on("messageDelete", (messageDelete) => {
-   if (message.channel.id !== '581795561854730252')
- messageDelete.channel.send(`The message : "${messageDelete.content}" by ${messageDelete.author.tag} was deleted.`)
-});
+  client.on('message', message => {
+    if (message.channel.id !== '581795561854730252');
+      client.channels.get("581795561854730252").send(`A message saying "${message.cleanContent}" has been deleted at ${new Date()}`)
+    });
 
   
   client.on('message', message => {
