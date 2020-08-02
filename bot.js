@@ -268,6 +268,7 @@ function RandomString(length) {
   
 
 client.on('messageDelete', message => {
+ if (message.channel.id !== '581795561854730252') return;
   console.log(`a message saying "${message.cleanContent}" was deleted from channel: ${message.channel.name} at ${new Date()}`);
 });
 
