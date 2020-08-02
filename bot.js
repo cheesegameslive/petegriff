@@ -267,7 +267,9 @@ function RandomString(length) {
   );
   
 
-
+client.on('messageDelete', message => {
+  console.log(`a message saying "${message.cleanContent}" was deleted from channel: ${message.channel.name} at ${new Date()}`);
+});
 
   
   client.on('message', message => {
