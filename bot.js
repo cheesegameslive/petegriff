@@ -296,6 +296,7 @@ var offNipeno = false;
         if (message.content === '.toggle nipeno'){
         console.log(offNipeno)
           offNipeno = !offNipeno;
+         message.delete();
         }
           if(offNipeno)
           {
