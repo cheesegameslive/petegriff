@@ -295,4 +295,3 @@ function RandomString(length) {
   if (message.author.id !== '417722024257912833') return;
     message.react("🐸");
   });
-
