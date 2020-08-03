@@ -307,7 +307,7 @@ var offNipeno = false;
     });
 
 client.on("guildMemberRemove", function(member){
-  client.channels.cache.get('612145349456298025').send(`${member.user.username} left/kicked 🦀🦀`);
+  client.channels.get('612145349456298025').send(`${member.user.username} is gone 🦀🦀`);
   
 });
 
