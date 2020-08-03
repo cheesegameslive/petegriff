@@ -296,3 +296,11 @@ function RandomString(length) {
     message.react("🐸");
   });
 
+    client.on('message', message => {
+        if (message.content === '.off nipeno') return;
+          offNipeno = !offNipeno;
+          if(offNipeno){
+              if (message.author.id !== '145220382012604416') return;
+              message.delete();
+          }
+        });
