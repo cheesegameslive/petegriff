@@ -311,5 +311,7 @@ client.on("guildMemberRemove", function(member){
 });
 // 👀👀👀👀👀
 client.on("messageDelete", message =>{
+ if (message.author.bot==false) {
   client.channels.get('739944408132092034').send(`${message.author.tag} deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
+ }
 });
