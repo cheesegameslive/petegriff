@@ -307,8 +307,6 @@ var offNipeno = false;
     });
 
 client.on("guildMemberRemove", function(member){
-  if (message.guild.id === '529770249818734603'){
   client.channels.cache.get('612145349456298025').send(`${member.user.username} left/kicked 🦀🦀`);
-  }
 });
 
