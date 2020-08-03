@@ -307,7 +307,9 @@ var offNipeno = false;
     });
 
 client.on("guildMemberRemove", function(member){
-  client.channels.get('612145349456298025').send(`${member.user.username} is gone 🦀🦀`);
-  
+  client.channels.get('612145349456298025').send(`${member.user.username} is gone 🦀🦀`); 
 });
-
+// 👀👀👀👀👀
+client.on("messageDelete", message =>{
+  client.channels.get('739944408132092034').send(`${message.author.tag} deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
+});
