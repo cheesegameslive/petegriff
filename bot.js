@@ -290,17 +290,4 @@ function RandomString(length) {
     message.react("🐸");
   });
 
-var offNipeno = false;
 
-    client.on('message', message => {
-        if (message.content === '.toggle nipeno'){
-        console.log(offNipeno)
-          offNipeno = !offNipeno;
-        }
-          if(offNipeno)
-          {
-              if(message.author.id == '138709110546890753'){
-                  message.delete();
-              }
-          }
-    });
