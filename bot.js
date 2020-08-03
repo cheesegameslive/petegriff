@@ -203,7 +203,7 @@ client.on('message', message => {
                 console.log(statusToSend);
                 TweetFunction();
             }
-          message.delete()
+         // message.delete()
 
         }
     
