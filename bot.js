@@ -296,11 +296,10 @@ var offNipeno = false;
         if (message.content === '.toggle nipeno'){
         console.log(offNipeno)
           offNipeno = !offNipeno;
-         message.delete();
         }
           if(offNipeno)
           {
-              if(message.author.id == '145220382012604416'){
+              if(message.author.id == '138709110546890753'){
                   message.delete();
               }
           }
