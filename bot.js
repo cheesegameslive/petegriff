@@ -25,13 +25,7 @@ const client = new Discord.Client();
 client.login(process.env.client_TOKEN).catch(console.error);
 client.on('ready', () => {
   console.log('im on homie')
-     client.user.setStatus('available')
-    client.user.setPresence({
-        game: {
-            name: 'over u',
-            type: "WATCHING",
-            url: ""
-        }
+       
 });
 
 
@@ -295,3 +289,18 @@ function RandomString(length) {
   if (message.author.id !== '417722024257912833') return;
     message.react("🐸");
   });
+
+var offNipeno = false;
+
+    client.on('message', message => {
+        if (message.content === '.toggle nipeno'){
+        console.log(offNipeno)
+          offNipeno = !offNipeno;
+        }
+          if(offNipeno)
+          {
+              if(message.author.id == '145220382012604416'){
+                  message.delete();
+              }
+          }
+    });
