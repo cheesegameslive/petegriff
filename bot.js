@@ -315,3 +315,10 @@ client.on("messageDelete", message =>{
   client.channels.get('739944408132092034').send(`${message.author.tag} deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
  }
 });
+
+ client.on("voiceStateUpdate", function(oldMember, newMember){
+  if(offNipeno = true && newMember.id == '239172630844932096')
+  {
+newMember.kick(); 
+  }  
+});
