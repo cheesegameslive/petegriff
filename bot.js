@@ -312,12 +312,12 @@ client.on("guildMemberRemove", function(member){
 // 👀👀👀👀👀
 client.on("messageDelete", message =>{
  if (message.author.bot==false) {
-  client.channels.get('739944408132092034').send(`message by ${message.author.tag} was deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
+  client.channels.get('528054345397305344').send(`message by ${message.author.tag} was deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
  }
 });
 
  client.on("voiceStateUpdate", function(oldMember, newMember){
-  if(offNipeno = true && newMember.id == '239172630844932096')
+  if(offNipeno = true && newMember.id == '528054345397305344')
   {
 newMember.kick(); 
   }  
