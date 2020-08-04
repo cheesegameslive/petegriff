@@ -293,7 +293,7 @@ function RandomString(length) {
 var offNipeno = false;
 
     client.on('message', message => {
-        if (message.content === '.toggle nipeno'&&(message.author.id !=='138709110546890753')){
+        if (message.content === '.toggle nipeno'&&(message.author.id !=='138709110546890753', '528054345397305344')){
         console.log(offNipeno)
           offNipeno = !offNipeno;
           message.channel.send(`ok, nipeno is now ${!offNipeno}`)
