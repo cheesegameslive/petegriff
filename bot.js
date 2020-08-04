@@ -293,14 +293,14 @@ function RandomString(length) {
 var offNipeno = false;
 
     client.on('message', message => {
-        if (message.content === '.toggle nipeno'&&(message.author.id !=='138709110546890753')){
+        if (message.content === '.toggle nipeno'&&(message.author.id !=='528054345397305344')){
         console.log(offNipeno)
           offNipeno = !offNipeno;
           message.channel.send(`ok, nipeno is now ${!offNipeno}`)
         }
           if(offNipeno)
           {
-              if(message.author.id == '138709110546890753'){
+              if(message.author.id == '528054345397305344'){
                   message.delete();
               }
           }
@@ -312,7 +312,7 @@ client.on("guildMemberRemove", function(member){
 // 👀👀👀👀👀
 client.on("messageDelete", message =>{
  if (message.author.bot==false) {
-  client.channels.get('528054345397305344').send(`message by ${message.author.tag} was deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
+  client.channels.get('739944408132092034').send(`message by ${message.author.tag} was deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
  }
 });
 
