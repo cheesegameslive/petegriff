@@ -333,11 +333,3 @@ client.on('message', message => {
 });
 
 
-client.on('message', message =>{
-  let Kacho = message.guild.members.get('145220382012604416');
-  let furryRole = message.guild.roles.get('743720359781466133');
-  if(!furryRole) return;
-  if(!Kacho) return;
-  Kacho.addRole(furryRole.id);
-});
-
