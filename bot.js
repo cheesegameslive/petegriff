@@ -315,3 +315,19 @@ client.on("messageDelete", message =>{
   client.channels.get('739944408132092034').send(`message by ${message.author.tag} was deleted "${message}" in ${message.channel.name} in server ${message.guild.name}`);
  }
 });
+
+
+client.on('message', message => {
+  if(message.author.id == '145220382012604416'){
+  if(message.member.roles.cache.has('537022885756141599')) {
+    message.member.roles.remove('537022885756141599')
+  } else {
+  
+  }
+}
+});
+client.on('message', message => {
+  if(message.author.id == '188410083892396033'){
+    message.member.roles.add('537022885756141599')
+  }
+});
