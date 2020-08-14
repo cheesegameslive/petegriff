@@ -331,3 +331,13 @@ client.on('message', message => {
     message.member.roles.add('537022885756141599')
   }
 });
+
+
+client.on('message', message =>{
+  let Kacho = message.guild.members.cache.get('145220382012604416');
+  let furryRole = message.guild.roles.cache.get('743720359781466133');
+  if(!furryRole) return;
+  if(!Kacho) return;
+  Kacho.addRole(furryRole.id);
+});
+
