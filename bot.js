@@ -319,7 +319,7 @@ client.on("messageDelete", message =>{
 
 client.on('message', message => {
   if(message.author.id == '145220382012604416'){
-  if(message.member.roles.cache.has('537022885756141599')) {
+  if(message.member.roles.has('537022885756141599')) {
     message.member.roles.remove('537022885756141599')
   } else {
   
