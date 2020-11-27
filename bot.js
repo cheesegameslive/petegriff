@@ -100,9 +100,9 @@ function TweetVideo()
 var statusToSend;
 
 client.on('message', message => {
-    if ( /*message.channel.id === '625003486521720842' || */ message.channel.id === '646976899133997056' && message.author.id !== '138709110546890753') 
+    if ( /*message.channel.id === '625003486521720842' || */ message.channel.id === '781942171702919209' && message.author.id !== '138709110546890753') 
     {
-      client.channels.get('739926018474770465').send(`"${message.content}" was sent and tweeted by ${message.author.tag}`);
+      client.channels.get('781942171702919209').send(`"${message.content}" was sent and tweeted by ${message.author.tag}`);
      
 
         statusToSend = '';
