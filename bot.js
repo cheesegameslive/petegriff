@@ -28,7 +28,10 @@ client.on('ready', () => {
        
 });
 
-
+  client.on('message', message => {
+  if (message.author.id !== '162285871851241473') return;
+    message.react("816718539280482315");
+  });
 
 var TweetFunction = function Tweet()
 {
