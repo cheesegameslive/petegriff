@@ -319,3 +319,26 @@ client.on("messageDelete", message =>{
  }
 });
 
+
+client.on('message', message => 
+    {
+        let msg = message.content.split("@someone");
+        if(message.content.toLowerCase().startsWith("@someone"))
+        {
+            let members = message.guild.members;
+            //console.log(members);
+            let randomPer = members.random().user;
+            if(randomPer.id!=client.user.id)
+            {
+                let mentionName = `${randomPer.username}#${randomPer.discriminator}`;
+                randomPer.send(message.author.username + " randomly sent you this message:\n\n" + msg[1]);
+                console.log(`@${mentionName} (${randomPer.id})`)
+                message.attachments.forEach(attachment => 
+                    {
+                    const url = attachment.url;
+                    randomPer.send(url)
+                    });
+            }
+        }
+    }
+);
